@@ -1,10 +1,10 @@
-#include <robot_control/pointMessages.h> 
+#include <robot_control/algorithmImplementation.h> 
 
 int main (int argc, char **argv) {    
     
     ros::init(argc, argv, "robot_control");
     
-    pointMessages tracker;
+    algorithmImplementation tracker;
     
     tracker.run();
     

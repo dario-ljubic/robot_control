@@ -125,13 +125,13 @@ include_directories(
 )
 
 ## Declare a C++ library
-add_library(pointMessages src/pointMessages.cpp )
+add_library(algorithmImplementation src/algorithmImplementation.cpp )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
-add_dependencies(pointMessages ${catkin_EXPORTED_TARGETS})
-target_link_libraries(pointMessages ${catkin_LIBRARIES})
+add_dependencies(algorithmImplementation ${catkin_EXPORTED_TARGETS})
+target_link_libraries(algorithmImplementation ${catkin_LIBRARIES})
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
@@ -149,7 +149,7 @@ add_executable(${PROJECT_NAME}_node src/${PROJECT_NAME}.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(${PROJECT_NAME}_node pointMessages ${catkin_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_node algorithmImplementation ${catkin_LIBRARIES})
 
 #############
 ## Install ##
